@@ -100,7 +100,7 @@
 }
 
 .sidebar.open > nav {
-	transform: translateY(-450%);
+	transform: translateY(-395%);
 	transition: 0.4s linear;
 	transition-delay: 0.8s;
 }
