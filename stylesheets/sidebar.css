@@ -108,13 +108,20 @@
 .sidebar > nav > ul > .nav-item {
 	cursor: pointer;
 	border-radius: 4px;
-	width: 80%;	
+	width: 100%;
+}
+
+.sidebar.open > nav > ul > .nav-item {
+	width: 80%;
 }
 
 .sidebar > nav > ul > .nav-item:hover {
 	background: rgba(255, 255, 255, 0.1);
-	transform: translateX(27px);
 	transition: 0.4s;
+}
+
+.sidebar.open > nav > ul > .nav-item:hover {
+	transform: translateX(27px);
 }
 
 .sidebar > nav > ul > .nav-item:active {
