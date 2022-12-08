@@ -94,6 +94,7 @@
 .sidebar > nav {
 	block-size: fit-content;
 	padding: 0 15px;
+	padding-bottom: 15px;
 	margin-top: 20px;
 	transition: 0.4s linear;
 }
