@@ -108,11 +108,12 @@
 .sidebar > nav > ul > .nav-item {
 	cursor: pointer;
 	border-radius: 4px;
-	width: 100%;	
+	width: 80%;	
 }
 
 .sidebar > nav > ul > .nav-item:hover {
 	background: rgba(255, 255, 255, 0.1);
+	transform: translateX(27px);
 	transition: 0.4s;
 }
 
