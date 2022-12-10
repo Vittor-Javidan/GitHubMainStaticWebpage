@@ -9,10 +9,8 @@
 }
 
 .page > .window {
-	width: 150vh;
+	width: 1000px;
 	height: 70vh;
-	max-width: 1000px;
-	max-height: 650px;
 	background: rgba(10, 10, 10, 0.65);
 	backdrop-filter: blur(6px);
 	box-shadow: 0 8px 32px rgb(2, 4, 24);
@@ -71,6 +69,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	padding: 5px;
 }
 
 #about-me > .window > .content > #introduction > #profile-pic {
@@ -134,9 +133,8 @@
 
 @media (max-width: 1100px) {
 	.page > .window {
-		width: 80vw;
-		height: 90vh;
-		max-height: 800px;
+		width: 90%;
+		height: 90%;
 	}
 }
 
@@ -144,12 +142,12 @@
 
 	.page {
 		margin-left: 70px;
-		padding-top: 50px;
+		padding-top: 10%;
 	}
 
 	.page > .window {
-		width: 79vw;
-		height: 90vh;
+		width: 95%;
+		height: 95%;
 	}
 
 	#about-me > .window > .content > #introduction {
@@ -166,7 +164,7 @@
 	}
 
 	#about-me > .window > .content > #introduction > h1 {
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 
 	#about-me > .window > .content > #introduction > p {
