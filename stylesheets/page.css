@@ -61,6 +61,8 @@
 	margin: 10px 10px;
 	width: auto;
 	height: calc(100% - 52px);
+	overflow: hidden;
+	overflow-y: scroll;
 }
 
 /* ABOUT ME CONTENT ================================================= */
@@ -70,6 +72,16 @@
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 5px;
+}
+
+.page > .window > .content::-webkit-scrollbar {
+	width: 5px;
+	height: 95%;
+}
+
+.page > .window > .content::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
 }
 
 #about-me > .window > .content > #introduction > #profile-pic {
