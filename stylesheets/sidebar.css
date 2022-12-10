@@ -195,6 +195,14 @@
 	.sidebar.open > .menu-label {
 		margin-top: 25px;
 	}
+
+	.sidebar > .menu-label > img {
+		opacity: 0;
+	}
+
+	.sidebar.open > .menu-label > img {
+		opacity: 1;
+	}
 	
 	.sidebar > nav > ul {
 		display: flex;
