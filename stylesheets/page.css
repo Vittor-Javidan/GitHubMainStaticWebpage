@@ -79,7 +79,6 @@
 	background-image: url('../images/profilePic.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	//border: 2px solid rgba(255, 255, 255, 0.09);
 	border: 2px solid rgb(100, 100, 100);
 	border-radius: 50%;
 	float: left;
@@ -131,4 +130,53 @@
 
 #about-me > .window > .content > ul > li > a > i {
 	font-size: 6rem;
+}
+
+@media (max-width: 1100px) {
+	.page > .window {
+		width: 80vw;
+		height: 90vh;
+		max-height: 800px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.page {
+		margin-left: 70px;
+		padding-top: 50px;
+	}
+
+	.page > .window {
+		width: 79vw;
+		height: 90vh;
+	}
+
+	#about-me > .window > .content > #introduction {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#about-me > .window > .content > #introduction > #profile-pic {
+		width: 150px;
+		height: 150px;
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	#about-me > .window > .content > #introduction > h1 {
+		font-size: 2rem;
+	}
+
+	#about-me > .window > .content > #introduction > p {
+		font-size: 1.2rem;
+	}
+
+	#about-me > .window > .content > ul > li > a > i:hover {
+
+		transform: translateY(0px);
+		scale: 1;
+	}
+
 }
