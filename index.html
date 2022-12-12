@@ -84,7 +84,7 @@
 						<div class="yellow-dot"></div>
 						<div class="green-dot"></div>
 					</div>
-					<div id="draggable"></div>
+					<div class="draggable" id="about-me-draggable"></div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="content">
@@ -135,12 +135,15 @@
 
 
 		<!-- MY PROJECTS WINDOW -->
-	<!--	<div class="page" id="my-projects">
-			<div class="window">
-				<div class="colored-top-dots">
-					<div class="red-dot"></div>
-					<div class="yellow-dot"></div>
-					<div class="green-dot"></div>
+		<div class="page" id="my-projects">
+			<div class="window" id="my-projects-window">
+				<div class="taskbar">
+					<div class="colored-top-dots">
+						<div class="red-dot"></div>
+						<div class="yellow-dot"></div>
+						<div class="green-dot"></div>
+					</div>
+					<div class="draggable" id="my-projects-draggable"></div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="content">
@@ -927,7 +930,11 @@
 		</div>
 
 		<!-- SCRIPTS -->
+		
+		<!-- SCRIPTS -->
 		<script src="scripts/sidebar.js"></script>
-		<script src="scripts/aboutMeDraggable.js"></script>
+		<script src="scripts/draggable/draggable.js"></script>
+		<script src="scripts/draggable/aboutMe.js"></script>
+		,<script src="scripts/windowZIndex.js"></script>
 	</body>
 </html>
