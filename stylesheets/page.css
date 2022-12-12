@@ -202,7 +202,6 @@
 }
 
 #my-curriculum > .window > .content h3 {
-	padding-left: 20px;
 	margin-bottom: 10px;
 	font-size: 2rem;
 }
@@ -234,6 +233,7 @@
 
 .topic-list:last-of-type > li {
 	margin-bottom: 0px;
+	margin-left: 40px;
 }
 
 .topic-list:last-of-type > li:hover {
@@ -266,7 +266,7 @@
 }
 
 .li-readings > ul {
-	margin-left: 20px;
+	margin-left: 40px;
 }
 
 .li-readings > ul > li:hover {

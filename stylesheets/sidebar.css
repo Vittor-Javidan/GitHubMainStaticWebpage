@@ -25,15 +25,16 @@
 	position: absolute;
 	color: #fff;
 	top: 100px;
-	right: -20px;
+	right: -22px;
 	height: 43px;
 	width: 43px;
 	border-radius: 50%;
-	font-size: 38px;
 	border: 2px solid rgba(255, 255, 255, 0.09);
-	transition: 0.8s linear;
 	background-color: rgb(184, 39, 135);
+	transition: 0.8s linear;
 	scale: 1;
+	display: grid;
+	justify-content: center;
 }
 
 .sidebar > .toggle:active {
@@ -56,6 +57,7 @@
 .sidebar > .toggle > i {
 	color: rgba(30, 30, 30, 0.9);
 	transition: 0.4s linear;
+	font-size: 38px;
 }
 
 .sidebar.open > .toggle > i {
