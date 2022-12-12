@@ -1,12 +1,6 @@
 /* WINDOW GENERAL CSS */
 
-.page {
-	height: 100vh;
-	margin-left: 90px;
-	width: calc(100vw - 90px);
-}
-
-.page > .window {
+.window {
 	width: 1000px;
 	height: 70vh;
 	background: rgba(10, 10, 10, 0.65);
@@ -16,11 +10,11 @@
 	border-radius: 10px;
 }
 
-.page > .window > .taskbar {
+.taskbar {
 	display: flex;
 }
 
-.page > .window > .taskbar > .colored-top-dots {
+.taskbar > .colored-top-dots {
 	display: flex;
 	width: fit-content;
 	margin: 0px 16px;
@@ -29,37 +23,46 @@
 	gap: 7px;
 }
 
-.page > .window > .taskbar > .colored-top-dots > .red-dot,
-.page > .window > .taskbar > .colored-top-dots > .yellow-dot,
-.page > .window > .taskbar > .colored-top-dots > .green-dot {
+.taskbar > .colored-top-dots > .red-dot,
+.taskbar > .colored-top-dots > .yellow-dot,
+.taskbar > .colored-top-dots > .green-dot {
 	width: 14px;
 	height: 14px;
 	border: 1px solid rgba(10, 10, 10, 0.65);
 	box-shadow: 0 8px 32px rgb(2, 4, 24);
 }
 
-.page > .window > .taskbar > .colored-top-dots > .red-dot {
+.taskbar > .colored-top-dots > .red-dot {
 	border-radius: 50%;
 	background-color: rgb(255, 96, 92);
 }
 
-.page > .window > .taskbar > .colored-top-dots > .yellow-dot {
+.taskbar > .colored-top-dots > .yellow-dot {
 	border-radius: 50%;
 	background: rgb(255, 189, 68);
 }
 
-.page > .window > .taskbar > .colored-top-dots > .green-dot {
+.taskbar > .colored-top-dots > .green-dot {
 
 	border-radius: 50%;
 	background: rgb(0, 202, 78);
 }
 
-.page > .window > .horizontal-line {
+.draggable {
+	padding-left: 20px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+.horizontal-line {
 	margin: 0 5px;
 	border-bottom: 2px solid rgba(255, 255, 255, 0.09);
 }
 
-.page > .window > .content {
+.content {
 	margin: 10px 10px;
 	padding: 25px;
 	width: auto;
@@ -68,12 +71,12 @@
 	overflow-y: scroll;
 }
 
-.page > .window > .content::-webkit-scrollbar {
+.content::-webkit-scrollbar {
 	width: 5px;
 	height: 95%;
 }
 
-.page > .window > .content::-webkit-scrollbar-thumb {
+.content::-webkit-scrollbar-thumb {
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 5px;
 }
@@ -287,30 +290,56 @@
 
 @media (min-width: 1101px) {
 
-	.window {
+	.page {
 		position: absolute;
 		width: fit-content;
 		height: fit-content;
 		top: calc(50% - 35vh);
 		left: calc(50% - 500px + 90px);
 		z-index: 1;
+		opacity: 1;
+		scale: 1;
 	}
 
-	.zIndex2  {
+	.zIndex2 {
 		z-index: 2;
+	}
+
+	.hide-page {
+		opacity: 0;
+		scale: 0;
+		transition: 0.7s linear;
 	}
 
 	.page > .window > .taskbar > .draggable {
 		width: 100%;
 		height: auto;
 		cursor: pointer;
-		border: 1px solid red;
+
 	}
+
+	#my-projects {
+		top: 30px;
+		left: 140px;
+	}
+
+	#my-certificates {
+		top: 70px;
+		left: 870px;
+	}
+
+	#my-curriculum {
+		top: 250px;
+		left: 700px;
+	}
+
 }
 
 @media (max-width: 1100px) {
 
 	.page {
+		height: 100vh;
+		width: calc(100vw - 90px);
 		margin-left: 90px;
 		display: flex;
 		align-items: center;
@@ -331,6 +360,7 @@
 @media (max-width: 600px) {
 
 	.page {
+		height: 100vh;
 		width: calc(100vw - 70px);
 		display: flex;
 		align-items: center;

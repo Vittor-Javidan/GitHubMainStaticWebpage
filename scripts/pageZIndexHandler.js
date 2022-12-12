@@ -1,10 +1,8 @@
-const windows =  document.querySelectorAll('.window')
-
-windows.forEach(element => {
+pages.forEach(element => {
 
     element.addEventListener('click', () => {
 
-        windows.forEach(element => {
+        pages.forEach(element => {
             element.classList.remove('zIndex2');
         })
 
