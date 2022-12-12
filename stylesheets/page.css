@@ -3,9 +3,7 @@
 .page {
 	height: 100vh;
 	margin-left: 90px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: calc(100vw - 90px);
 	z-index: 1;
 }
 
@@ -19,35 +17,46 @@
 	border-radius: 10px;
 }
 
-.page > .window > .colored-top-dots {
+.page > .window > .taskbar {
 	display: flex;
-	width: calc(30px*3 + 15px);
+}
+
+.page > .window > .taskbar > .colored-top-dots {
+	display: flex;
+	width: fit-content;
 	margin: 0px 16px;
 	margin-top: 13px;
 	margin-bottom: 11px;
 	gap: 7px;
 }
 
-.page > .window > .colored-top-dots > .red-dot,
-.page > .window > .colored-top-dots > .yellow-dot,
-.page > .window > .colored-top-dots > .green-dot {
+.page > .window > .taskbar > #draggable {
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+	border: 1px solid red;
+}
+
+.page > .window > .taskbar > .colored-top-dots > .red-dot,
+.page > .window > .taskbar > .colored-top-dots > .yellow-dot,
+.page > .window > .taskbar > .colored-top-dots > .green-dot {
 	width: 14px;
 	height: 14px;
 	border: 1px solid rgba(10, 10, 10, 0.65);
 	box-shadow: 0 8px 32px rgb(2, 4, 24);
 }
 
-.page > .window > .colored-top-dots > .red-dot {
+.page > .window > .taskbar > .colored-top-dots > .red-dot {
 	border-radius: 50%;
 	background-color: rgb(255, 96, 92);
 }
 
-.page > .window > .colored-top-dots > .yellow-dot {
+.page > .window > .taskbar > .colored-top-dots > .yellow-dot {
 	border-radius: 50%;
 	background: rgb(255, 189, 68);
 }
 
-.page > .window > .colored-top-dots > .green-dot {
+.page > .window > .taskbar > .colored-top-dots > .green-dot {
 
 	border-radius: 50%;
 	background: rgb(0, 202, 78);
@@ -87,7 +96,7 @@
 
 
 
-/* ABOUT ME CONTENT ================================================= */
+/* ABOUT ME CONTENT ============ .taskbar >===================================== */
 
 #about-me > .window > .content {
 	display: flex;
@@ -284,7 +293,31 @@
 
 /* MEDIA QUERIES =========================================================== */
 
+@media (min-width: 1101px) {
+	.window {
+		position: absolute;
+		width: fit-content;
+		height: fit-content;
+		top: calc(50% - 35vh);
+		left: calc(50% - 500px + 90px);
+	}
+}
+
 @media (max-width: 1100px) {
+
+	.page {
+		height: 100vh;
+		margin-left: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: static;
+	}
+
+	#draggable {
+		cursor: default;
+	}
+
 	.page > .window {
 		width: 90%;
 		height: 90%;
@@ -294,8 +327,18 @@
 @media (max-width: 600px) {
 
 	.page {
+		height: 100vh;
+		margin-left: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: static;
 		margin-left: 70px;
 		padding-top: 10%;
+	}
+
+	#draggable {
+		cursor: default;
 	}
 
 	.page > .window {
