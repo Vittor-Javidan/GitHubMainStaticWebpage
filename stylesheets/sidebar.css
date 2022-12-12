@@ -30,6 +30,7 @@
 	width: 43px;
 	border-radius: 50%;
 	border: 2px solid rgba(255, 255, 255, 0.09);
+	box-shadow: 0 8px 32px rgb(2, 4, 24);
 	background-color: rgb(184, 39, 135);
 	transition: 0.8s linear;
 	scale: 1;
@@ -44,6 +45,7 @@
 
 .sidebar.open > .toggle {
 	border-radius: 5px 50% 50% 5px;
+	box-shadow: 0 8px 32px rgb(2, 4, 24);
 	transform: translate(15px, calc(100vh/2 - 230px));
 	transition: 0.4s linear;
 	scale: 1.4;
@@ -123,16 +125,18 @@
 
 .sidebar > nav > ul > .nav-item {
 	cursor: pointer;
-	border-radius: 4px;
 	width: 100%;
+	border-radius: 10px;
 }
 
 .sidebar.open > nav > ul > .nav-item {
+	border-radius: 10px 50px 50px 10px;
 	width: 80%;
 }
 
 .sidebar > nav > ul > .nav-item:hover {
 	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 7px 7px 50px rgb(2, 4, 24);
 	transition: 0.4s;
 }
 
