@@ -13,9 +13,9 @@
 	justify-content: space-between;
 
 	/*Background and Shape*/
-	background: rgba(10, 10, 10, 0.65);
-	box-shadow: 0 8px 32px rgb(2, 4, 24);
-	border-right: 2px solid rgba(255, 255, 255, 0.09);
+	background: var(--primary-color);
+	box-shadow: 0 8px 32px var(--shadow-color);
+	border-right: 2px solid var(--borders-color);
 	backdrop-filter: blur(6px);
 
 	/*Animation*/
@@ -39,14 +39,14 @@
 	right: -22px;
 
 	/*Background and Shape*/
-	background-color: rgb(184, 39, 135);
-	box-shadow: 0 8px 32px rgb(2, 4, 24);
-	border: 2px solid rgba(255, 255, 255, 0.09);
+	background-color: var(--secondary-color);
+	box-shadow: 0 8px 32px var(--shadow-color);
+	border: 2px solid var(--borders-secondary-color);
 	border-radius: 50%;
 
 	/*Effects*/
 	cursor: pointer;
-	color: #fff;
+	color: var(--font-color);
 
 	/*Animation*/
 	transition: 0.8s linear;
@@ -54,13 +54,13 @@
 }
 
 .sidebar > .toggle:active {
-	background: rgba(220, 220, 220, 0.9);
+	background: var(--active-color);
 	transition: 0.05s;
 }
 
 .sidebar.open > .toggle {
 	/*Background and Shape*/
-	box-shadow: 0 8px 32px rgb(2, 4, 24);
+	box-shadow: 0 8px 32px var(--shadow-color);
 	border-radius: 5px 50% 50% 5px;
 
 	/*Animation*/
@@ -70,7 +70,7 @@
 }
 
 .sidebar.open > .toggle:active {
-	background: rgba(220, 220, 220, 0.9);
+	background: var(--active-color);
 	transition: 0.05s;
 }
 
@@ -88,7 +88,7 @@
 	align-items: center;
 
 	/*Effects*/
-	color: rgba(30, 30, 30, 0.9);
+	color: var(--primary-color);
 
 	/*Animation*/
 	transition: 0.4s linear;
@@ -140,7 +140,7 @@
 
 	/*Disposition*/
 	font-variant: small-caps;
-	color: #fff;
+	color: var(--font-color);
 	pointer-events: none;
 
 	/*Animation*/
@@ -187,8 +187,8 @@
 }
 
 .sidebar > nav > ul > .nav-item:hover {
-	background: rgba(255, 255, 255, 0.1);
-	box-shadow: 7px 7px 50px rgb(2, 4, 24);
+	background: var(--terciary-color);
+	box-shadow: 7px 7px 50px var(--shadow-color);
 	transition: 0.4s;
 }
 
@@ -197,7 +197,7 @@
 }
 
 .sidebar > nav > ul > .nav-item:active {
-	background: rgba(255, 50, 142, 0.8);
+	background: var(--active-secondary-color);
 	transition: 0.05s;
 }
 
@@ -213,7 +213,7 @@
 
 	/*Effects*/
 	text-decoration: none;
-	color: #fff;
+	color: var(--font-color);
 }
 
 .sidebar > nav > ul > .nav-item > a > i {
@@ -257,12 +257,12 @@
 		height: 60px;
 
 		/*Background and Shape*/
-		background-color: rgba(255, 50, 142, 0.8);
-		border: 2px solid rgba(255, 255, 255, 0.09);
+		background-color: var(--secondary-color);
+		border: 2px solid var(--borders-secondary-color);
 	}
 
 	.sidebar > nav > ul .active:hover {
-		background-color: rgba(255, 50, 142, 0.8);
+		background-color: var(--secondary-color);
 		transform: translateX(10px);
 	}
 }

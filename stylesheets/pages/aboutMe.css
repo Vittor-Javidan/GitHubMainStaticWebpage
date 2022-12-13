@@ -19,7 +19,7 @@
 	background-image: url('../../images/profilePic.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	border: 2px solid rgb(100, 100, 100);
+	border: 2px solid var(--borders-color);
 	border-radius: 50%;
 
 	/*Effects*/
@@ -32,7 +32,7 @@
 	margin-bottom: 10px;
 
 	/*Effects*/
-	color: #fff;
+	color: var(--font-color);
 	font-variant: small-caps;
 }
 
@@ -46,7 +46,7 @@
 	line-height: 1.4;
 
 	/*Effects*/
-	color: #fff;
+	color: var(--font-color);
 }
 
 #about-me > .window > .content > #introduction > p:first-letter {
@@ -60,7 +60,7 @@
 }
 
 #about-me > .window > .content > ul > li > a {
-	color: #fff;
+	color: var(--font-color);
 	cursor: pointer;
 }
 
@@ -75,7 +75,7 @@
 }
 
 #about-me > .window > .content > ul > li > a > i:active {
-	color: rgba(255, 50, 142, 0.8);
+	color: var(--active-secondary-color);
 	transition: 0.05s linear;
 }
 

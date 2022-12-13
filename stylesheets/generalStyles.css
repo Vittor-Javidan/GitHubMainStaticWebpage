@@ -1,5 +1,21 @@
 /* GENERAL CSS ========================================================================================================================================================================== */
 
+:root {
+	--primary-color: rgba(5, 5, 5, 0.75);
+	--secondary-color: rgba(184, 39, 135, 1);
+	--terciary-color: rgba(255, 255, 255, 0.1);
+	--borders-color: rgb(50, 50, 50);
+	--borders-secondary-color: rgba(255, 255, 255, 0.09);
+	--scrollbar-color: rgba(255, 255, 255, 0.5);
+	--scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
+	--shadow-color: rgb(2, 4, 24);
+	--font-color: #fff;
+	--font-secondary-color: rgb(150, 150, 150);
+	--active-color: rgba(220, 220, 220, 0.9);
+	--active-secondary-color: rgba(184, 39, 135, 0.8);
+	--taskbar--fullscreen-color: #111;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -20,17 +36,16 @@ html {
 }
 
 body {
-	background-color: rgba(20, 20, 20, 1);
 	font-family: 'Roboto', sans-serif;
 }
 
 body::-webkit-scrollbar {
 	width: 5px;
 	height: 95%;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: var(--scrollbar-color);
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: var(--scrollbar-thumb-color);
 	border-radius: 5px;
 }

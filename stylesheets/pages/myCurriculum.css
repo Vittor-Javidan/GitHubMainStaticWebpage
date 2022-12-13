@@ -1,11 +1,11 @@
 /* MY SELF-TAUGHT CURRICULUM CONTENT ==================================================================================================================================================== */
 
 #my-curriculum > .window > .content {
-	color: rgb(240, 240, 240);
+	color: var(--font-color);
 }
 
 #my-curriculum > .window > .content a {
-	color: #fff;
+	color: var(--font-color);
 	text-decoration: none;
 }
 
@@ -14,7 +14,7 @@
 }
 
 #my-curriculum > .window > .content a:active {
-	color: rgba(255, 50, 142, 0.8);
+	color: var(--secondary-color);
 }
 
 #my-curriculum > .window > .content h1 {
@@ -59,7 +59,7 @@
 }
 
 .topic-list:last-of-type {
-	color: rgb(150, 150, 150);
+	color: var(--font-secondary-color);
 }
 
 .topic-list > li  {
@@ -80,7 +80,7 @@
 }
 
 .subtopic-list > li {
-	color: rgb(150, 150, 150);
+	color: var(--font-secondary-color);
 	font-size: 1.6rem;
 }
 
